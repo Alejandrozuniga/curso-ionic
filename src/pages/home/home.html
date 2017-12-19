@@ -8,8 +8,8 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3> das
+  <h3>Ionic Menu Starter</h3> 
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/vxOtI7W6alo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <iframe width="560" height="315" [src]="variableVideo | domSanitizer:'https://www.youtube.com/embed/'" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+ 
 </ion-content>
